@@ -1,0 +1,106 @@
+@relation suicide.data
+@attribute word {Existence_is_futile,A_few_breathes_left_for_me, I_am_all_alone,Nah_They_dont_notice_or_care_about_me,it_started_badly_and_it_will_end_worse,begin_to_die,life_is_so_rude,depressing_it_is, murder_myself, constantly_torn_between_killing_myself_and_killing_everyone_around_me,To_kill_myself,Want_to_die_right_now,To_commit_suicide,Have_nothing_to_live_for, Want_to_kill,It_not_worth_it_anymore,Cant_live,Dont_want_to_live_anymore,To_end_it,I_am_tired_of_Myself,hate_my_life_hate,I_hate_myself,Want_to_be_here_anymore,End_it_all, Want_it_to_be_over, End_my_life_Want_it_all_to_end, Take_my_own_Wish, could_just_fall_asleep, Fall_asleep_and_never_wake, My_death_would, Want_to_end_it_all, To_live_anymore, Just_really_want_to_die, About_killing_myself, Rather_die_its_not_worth, I_am_sorry_that_i_m_leaving, Never_wake_up, Fuck_trying_to_live_normal, Killing_myself, So_why_should_continue_living, Stop_the_pain, Dont_want_to_live_defeated, Kill_myself_right, commit_suicide_within_few, Thoughts_of_suicide, And_pain_anymore_just_can, Point_in_living, Put_an_end_to_this, Worth_it_anymore, Been_self_harming_for_years, Have_nothing_to, Bad_really_am_worthless_what, Wanted_to_die, Life_is_this_miserable_just, existence_is_futile, If_loneliness_was_friends_then_I_had_have_a_lot_of_friends,I_am_trapped_in_an_endless_loop_of_misery_and_regret_my_life, I_had_a_near_death_experience_today_so_I_nearly_had_a_good_day, All_are_my_enemies, Live_life_to_the_dullest, It_is_never_too_late_or_early_to_give_up, Life_defeated_me_luckily_to_an_extent_it_is_not_curable_now, I_wish_i_meet_my_end_soon, Want_to_flood_my_life_with_tears, Started_loving_every_scar_i_have, Regrets_all_over_my_mind, Giving_up_on_life, Darkness_all_around,No_sign_of_lifeliness, All_dreams_shattered, No_more_hopes_of_being_better, Time_is_cruel_so_is_life, Sadness_occupied_the_heart_space, You_will_be_sorry_when_I_am_gone, I_took_apart_a_razor_I_had_just_gotten_from_the_store, Dont_love_but_hurt_and_humiliate, Loneliness_is_my_new_friend, My_end_is_near, I_want_to_tear_myself_down, No_one_understands_me, Going_to_a_journey_that_meets_the_dead_end, Giving_up_on_life_to_die, Delete_my_existence, I_am_dying_inside, Tough_time_will_never_last, No_ray_of_light, Breathlessness_everyday, Desire_to_leave_body, Suicide_is_a_permanent_solution_to_a_temporary_problem, High_on_blood_let_me_lose_some, Less_on_life, Loosing_myself_a_bit_daily, No_medicine_can_cure_me_now, You_broke_me_into_million_pieces, Inhaling_positivity_exhaling_negativity, Even_in_a_crowded_room_i_feel_lonely, I_dont_deserve_to_live_anymore, Crowded_by_negativity_all_around, My_heart_just_pumps, I_am_done_for_this_life, negativivity, wortless_blood, live_rudely}
+@attribute score numeric
+@attribute critical {red,orange,yellow}
+@attribute tendency {yes,no}
+@data
+ To_kill_myself,98, red, yes
+ Want_to_die_right_now,92, red, yes
+ To_commit_suicide,99, red, yes
+ Have_nothing_to_live_for, 83, red, yes
+ Want_to_kill,82, orange, yes
+ It_not_worth_it_anymore, 63, yellow, yes
+ Cant_live,71, orange, yes
+ Dont_want_to_live_anymore, 77, red, yes
+ To_end_it, 54, yellow, no
+ I_am_tired_of_Myself, 85, orange, yes
+ hate_my_life_hate, 73, orange, yes
+ I_hate_myself, 69, orange, yes
+ Want_to_be_here_anymore, 42, yellow, no
+ End_it_all, 47, yellow, no
+ Want_it_to_be_over, 70, orange, yes
+ End_my_life_Want_it_all_to_end, 81, red, yes
+ Take_my_own_Wish, 53, yellow,no
+ could_just_fall_asleep, 73, yellow, yes
+ Fall_asleep_and_never_wake, 90, red, yes
+ My_death_would, 79, orange, yes
+ Want_to_end_it_all, 47, yellow, no
+ To_live_anymore, 54, yellow, no
+ Just_really_want_to_die, 83, red, yes
+ About_killing_myself, 86, red, yes
+ Rather_die_its_not_worth, 82, red,yes
+ I_am_sorry_that_i_m_leaving, 94, red, yes
+ Never_wake_up, 70, orange, yes
+ Fuck_trying_to_live_normal, 81, orange, yes
+ So_why_should_continue_living, 90, red, yes
+ Stop_the_pain, 66, yellow, no
+ Dont_want_to_live_defeated, 37, yellow, no
+ Kill_myself_right, 82, red, yes
+ commit_suicide_within_few,98, red, yes
+ Thoughts_of_suicide, 96, red, yes
+ And_pain_anymore_just_can,63, yellow, no
+ Point_in_living, 50, yellow, no
+ Put_an_end_to_this, 56, yellow, no
+ Worth_it_anymore, 58, yellow, no
+ Been_self_harming_for_years,98, red, yes
+ Have_nothing_to, 81, red, yes
+ Bad_really_am_worthless_what, 94, red, yes
+ Wanted_to_die, 97, red, yes
+ Life_is_this_miserable_just, 76, orange, yes
+ constantly_torn_between_killing_myself_and_killing_everyone_around_me, 88, red, yes
+ murder_myself, 82, red, yes
+ depressing_it_is, 97, red, yes
+ life_is_so_rude, 72,orange, yes
+ it_started_badly_and_it_will_end_worse, 62, yellow, no
+ Nah_They_dont_notice_or_care_about_me, 70, orange, yes
+ I_am_all_alone, 62, orange, no
+ A_few_breathes_left_for_me, 71, orange, yes
+ Existence_is_futile, 82, red, yes
+ If_loneliness_was_friends_then_I_had_have_a_lot_of_friends, 76, orange, yes
+ I_am_trapped_in_an_endless_loop_of_misery_and_regret_my_life, 90, red, yes
+ I_had_a_near_death_experience_today_so_I_nearly_had_a_good_day, 92, red, yes
+ All_are_my_enemies, 62, yellow, no
+ Live_life_to_the_dullest, 75, yellow, yes
+ It_is_never_too_late_or_early_to_give_up, 82, orange, no
+ Life_defeated_me_luckily_to_an_extent_it_is_not_curable_now, 66, orange, yes 
+ I_wish_i_meet_my_end_soon, 90, red, yes
+ Want_to_flood_my_life_with_tears, 88, orange, yes
+ Started_loving_every_scar_i_have, 68, yellow, no
+ Regrets_all_over_my_mind,70, orange, yes
+ Giving_up_on_life, 94, red, yes
+ Darkness_all_around, 62, yellow, no
+ No_sign_of_lifeliness, 45, yellow, no
+ All_dreams_shattered, 70, orange, no 
+ No_more_hopes_of_being_better, 88, red, yes
+ Time_is_cruel_so_is_life, 90, red, yes
+ Sadness_occupied_the_heart_space, 72, orange, no
+ You_will_be_sorry_when_I_am_gone, 80, red, yes
+ I_took_apart_a_razor_I_had_just_gotten_from_the_store, 50, yellow, no
+ Dont_love_but_hurt_and_humiliate, 71, orange, yes
+ Loneliness_is_my_new_friend, 58, yellow, yes
+ My_end_is_near, 75, orange, yes
+ I_want_to_tear_myself_down, 65, orange, no
+ No_one_understands_me, 59, yellow, no
+ Going_to_a_journey_that_meets_the_dead_end, 78, orange, yes
+ Giving_up_on_life_to_die, 90, red, yes
+ Delete_my_existence, 83, red, yes
+ I_am_dying_inside, 80, orange, yes
+ Tough_time_will_never_last, 70, orange, yes
+ No_ray_of_light, 54, yellow, no
+ Breathlessness_everyday, 57, yellow, no
+ Desire_to_leave_body, 93, red, yes
+ Suicide_is_a_permanent_solution_to_a_temporary_problem, 98, red, yes
+ High_on_blood_let_me_lose_some, 86, red, yes
+ Less_on_life, 77, orange, yes
+ Loosing_myself_a_bit_daily, 83, red, yes
+ No_medicine_can_cure_me_now, 79, orange, yes
+ You_broke_me_into_million_pieces, 69, orange, yes
+ Inhaling_positivity_exhaling_negativity, 67, orange, no
+ Even_in_a_crowded_room_i_feel_lonely, 70, orange, yes
+ I_dont_deserve_to_live_anymore, 78, orange, yes
+ Crowded_by_negativity_all_around, 75, orange, yes
+ My_heart_just_pumps, 63, yellow, no
+ I_am_done_for_this_life, 85, red, yes
+ negativivity, 90, red, yes
+ wortless_blood, 84, red, yes
+ live_rudely, 57, yellow, no

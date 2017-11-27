@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sentiment Analysis App</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>Sentiment Analysis App</h1>
+  <hr/>
+  <input type="text" id="searchText" placeholder="Enter the text you would like to see the analysis for and hit return">
+  <div class="results">
+    <h3>Results</h3>
+    <lable class="loading">Loading.. Please wait</lable>
+    <br/>
+    <lable class="error">Oops.. Something went wrong</lable>
+    <br/>
+  </div>
+  <section class="wordnetapiresult">
+    <div class="right">
+    <center>
+      <div id="container">
+        <div id="header">
+          <h1>Suspected tweets without risk of suicide</h1>
+        </div>
+        <div id="content">
+          <div>
+        <span>CART</span>        
+        <span >SMO</span>
+        <span>NAIVE BAYES</span>
+    </div>
+          
+          <table border="1" id="lotto">
+            <tr class="tr1">
+              <td class="normal" id="cell1">&nbsp;</td>
+              <td class="normal" id="cell2">.&nbsp;</td>
+              <td class="normal" id="cell3">&nbsp;</td>
+            </tr>
+            <tr class="tr2">
+              <td class="normal" id="cell5">&nbsp;</td>
+              <td class="normal" id="cell6">&nbsp;</td>
+              <td class="normal" id="cell7">&nbsp;</td>
+
+            </tr>
+            <tr class="tr3">
+              <td class="normal" id="cell9">&nbsp;</td>
+              <td class="normal" id="cell10">&nbsp;</td>
+              <td class="normal" id="cell11">&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <input type="button" value="Re-generate Numbers" onclick="UpdateTable();" />
+    </center>
+        <!-- <table>
+          <thead>
+            <td>Alogorithms</td>
+            <td>CART</td>
+            <td>SMO</td>
+            <td>NAIVE BAYES</td>
+          </thead>
+          <tr>
+            <td>Retweeted</td>
+            <td>{{=retweet}}</td>
+          </tr>
+          <tr>
+            <td>Words Matched</td>
+            <td>{{=wordsMatched}}</td>
+          </tr>
+          <tr>
+            <td>Not Suicide Related Words</td>
+            <td>{{=positiveWords}}</td>
+          </tr>
+          <tr>
+            <td>Suicide Related Words</td>
+            <td>{{=negativeWords}}</td>
+          </tr>
+        </table>
+      </div> -->
+    
+  </section>
+  <section class="tweet-results">
+  </section>
+
+ <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+ <script type="text/javascript" src="scripts/app.js"></script>
+
+
+
+  <script type="text/html" id="tweet_tmpl">
+    <article>
+      <div class="left">
+        <img src="{{=imgSrc}}">
+        <p>{{=tweet}}
+        <a href="{{=tweetLink}}" target="_blank">Link</a></p>
+      </div>
+      <div class="right">
+        <table>
+          <tr>
+            <td>LEVEL</td>
+            <td>{{=score}}</td>
+          </tr>
+          <tr>
+            <td>Retweeted</td>
+            <td>{{=retweet}}</td>
+          </tr>
+          <tr>
+            <td>Words Matched</td>
+            <td>{{=wordsMatched}}</td>
+          </tr>
+          <tr>
+            <td>Not Suicide Related Words</td>
+            <td>{{=positiveWords}}</td>
+          </tr>
+          <tr>
+            <td>Suicide Related Words</td>
+            <td>{{=negativeWords}}</td>
+          </tr>
+        </table>
+      </div>
+    </article>
+  </script>
+</body>
+
+</html>

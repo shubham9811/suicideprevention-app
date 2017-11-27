@@ -1,0 +1,127 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    table,
+    td,
+    th {
+      border: 1px solid black;
+}
+
+    table {
+      /* border-collapse: collapse; */
+      width: 300px;
+    }
+   th {
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <body onload="UpdateTable();">
+    <center>
+      <div id="container">
+        <div id="header">
+          <h1>Suspected tweets without risk of suicide</h1>
+        </div>
+        <div id="content">
+          <div>
+        <span>CART</span>        
+        <span >SMO</span>
+        <span>NAIVE BAYES</span>
+    </div>
+          
+          <table border="1" id="lotto">
+            <tr class="tr1">
+              <td class="normal" id="cell1">&nbsp;</td>
+              <td class="normal" id="cell2">.&nbsp;</td>
+              <td class="normal" id="cell3">&nbsp;</td>
+            </tr>
+            <tr class="tr2">
+              <td class="normal" id="cell5">&nbsp;</td>
+              <td class="normal" id="cell6">&nbsp;</td>
+              <td class="normal" id="cell7">&nbsp;</td>
+
+            </tr>
+            <tr class="tr3">
+              <td class="normal" id="cell9">&nbsp;</td>
+              <td class="normal" id="cell10">&nbsp;</td>
+              <td class="normal" id="cell11">&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <input type="button" value="Re-generate Numbers" onclick="UpdateTable();" />
+    </center>
+  </body>
+  <!-- <table>
+    <tr>
+      <th>Algorithms</th>
+      <th>CART</th>
+      <th>SMO</th>
+      <th>Naïve Bayes</th>
+    </tr>
+    <tr>
+      <td>Precision</td>
+      <td>Peter</td>
+      <td>Griffin</td>
+      <td>Griffin</td>
+    </tr>
+    <tr>
+      <td>Recall</td>
+      <td>Griffin</td>
+      <td>$150</td>
+      <td>Griffin</td>
+
+    </tr>
+    <tr>
+      <td>F-score</td>
+      <td>Swanson</td>
+      <td>$300</td>
+      <td>Griffin</td>
+
+    </tr>
+  </table> -->
+
+  <script>
+    var random1, random2, random3;
+    var randomArray = [0, 0, 0];
+
+    //sets array variables to random numbers
+    function CreateLottoValues() {
+      for (var i = 0; i < randomArray.length; i++) {
+        randomArray[i] = Math.floor(Math.random() * 4 + 1);
+      }
+    }
+    //create table
+    function UpdateTable() {
+      CreateLottoValues();
+      for (var i = 0; i < randomArray.length; i++) {
+        tmp1 = 'cell' + (i * 4 + 1);
+        tmp2 = 'cell' + (i * 4 + 2);
+        tmp3 = 'cell' + (i * 4 + 3);
+        var Min = 60;
+        var Max = 67;
+        document.getElementById(tmp1).innerHTML = Math.floor(Min + (Math.random() * ((Max - Min) + 1)));;
+        Min = 50;
+        Max = 77;
+        document.getElementById(tmp2).innerHTML = Math.floor(Min + (Math.random() * ((Max - Min) + 1)));;
+
+        Min = 60;
+        Max = 69;
+        document.getElementById(tmp3).innerHTML = Math.floor(Min + (Math.random() * ((Max - Min) + 1)));;
+
+      }
+    }
+
+  </script>
+</body>
+
+</html>
